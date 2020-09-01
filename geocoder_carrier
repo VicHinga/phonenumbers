@@ -1,0 +1,12 @@
+# https://github.com/daviddrysdale/python-phonenumbers
+
+pip install phonenumbers
+
+from phonenumbers import geocoder
+ch_number = phonenumbers.parse("+254735493459", "CH")
+geocoder.description_for_number(ch_number, "en")
+
+
+from phonenumbers import carrier
+ro_number = phonenumbers.parse("+254735493459", "RO")
+carrier.name_for_number(ro_number, "en")
